@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: white;
+        margin: 0;
+      }
+      main {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 30px;
+      }
+      h1,
+      a {
+        color: chartreuse;
+      }
+
+      input,
+      textarea {
+        width: 80%;
+        border: none;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 3px;
+      }
+
+      form {
+        margin-top: 40px;
+
+        border-left: 2px solid chocolate;
+        padding: 5px;
+        padding-left: 20px;
+      }
+
+      input.submit {
+        display: block;
+        float: right;
+        width: 30%;
+        background-color: chocolate;
+        color: chartreuse;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 20px 0 50px 0;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a href="./about.html">Back</a>
+
+      <form action="" method="post">
+        <h1>Wanna talk?</h1>
+        <input type="text" name="nickname" placeholder="Your Nickname" />
+        <input type="text" name="email" placeholder="Your Email" /><br />
+        <div id="pick-one">
+          Pick One <br />
+          <input type="checkbox" name="deadpool" value="deadpool" />
+          <label for="deadpool"> Deadpool</label>
+          <input type="checkbox" name="jumanji" value="jumanji" />
+          <label for="jumanji"> Jumanji</label>
+          <input type="checkbox" name="neither" value="neither" checked />
+          <label for="neither"> Neither</label>
+          <br /><br />
+        </div>
+        <textarea name="message" style="width:80%; height:auto;">
+Tell me a little about you...</textarea
+        >
+        <input class="submit" type="submit" value="Let's talk" />
+      </form>
+    </main>
+
+    <footer>
+      <small>Design by Doreen Chemweno.</small>
+    </footer>
+  </body>
+</html>
